@@ -1,0 +1,16 @@
+gwizd:
+  security:
+    auth:
+      redirectUri: http://localhost:8080/api/docs.html
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5437/data
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            redirect-uri: http://localhost:8080/login/oauth2/code/google
