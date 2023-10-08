@@ -19,8 +19,8 @@ spring:
       client:
         registration:
           google:
-            client-id: 100928631375-g4vvsd5j7h4cpb14q59cecjsrjftd6f5.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_KEY}
 springdoc:
   api-docs:
     path: /api/docs
