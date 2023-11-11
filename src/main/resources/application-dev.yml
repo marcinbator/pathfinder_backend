@@ -1,12 +1,12 @@
-gwizd:
+pathfinder:
   security:
     auth:
       redirectUri: http://localhost:8080/api/docs.html
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://localhost:5437/data
+    username: user
+    password: password
     driver-class-name: org.postgresql.Driver
   security:
     oauth2:
