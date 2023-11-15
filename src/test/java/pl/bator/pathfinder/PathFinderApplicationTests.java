@@ -7,7 +7,6 @@ import org.springframework.test.context.ActiveProfiles;
 @SpringBootTest
 @ActiveProfiles("dev")
 class PathFinderApplicationTests {
-
     @Test
     void contextLoads() {
     }
