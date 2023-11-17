@@ -1,4 +1,4 @@
-gwizd:
+pathfinder:
   security:
     auth:
       loginUri: /api/oauth2/authorize
