@@ -4,8 +4,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/pathfinder_auth/pom.xml" />
         <option value="$PROJECT_DIR$/pathfinder_backend/pom.xml" />
-        <option value="$PROJECT_DIR$/pathfinder_service/pom.xml" />
       </list>
     </option>
   </component>

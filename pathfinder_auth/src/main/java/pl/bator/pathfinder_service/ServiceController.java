@@ -13,8 +13,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 @RequestMapping("/api/get")
 public class ServiceController {
     private WebClient webClient;
+
     @GetMapping("/{name}")
-    public ResponseEntity<String> isInDb(@PathVariable String name){
+    public ResponseEntity<String> isInDb(@PathVariable String name) {
         return ResponseEntity.ok(webClient.get()
                 .uri("http://localhost:8080/api/record")
                 .retrieve()

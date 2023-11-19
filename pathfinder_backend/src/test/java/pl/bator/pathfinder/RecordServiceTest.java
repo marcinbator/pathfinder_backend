@@ -1,4 +1,5 @@
 package pl.bator.pathfinder;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -11,8 +12,8 @@ import pl.bator.pathfinder.infrastructure.record.RecordService;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.mockito.Mockito.when;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class RecordServiceTest {
@@ -21,6 +22,7 @@ public class RecordServiceTest {
     private RecordService recordService;
     @Mock
     private RecordRepository recordRepository;
+
     @Test
     public void testGetRecords() {
         //given

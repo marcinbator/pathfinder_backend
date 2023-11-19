@@ -12,7 +12,7 @@
     <artifactId>pathfinder_auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pathfinder_service</name>
-    <description>pathfinder_service</description>
+    <description>pathfinder_auth</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.4</spring-cloud.version>

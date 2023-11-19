@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class RecordService {
     private final RecordRepository recordRepository;
+
     public List<Record> getRecords() {
         return recordRepository.findAll();
     }

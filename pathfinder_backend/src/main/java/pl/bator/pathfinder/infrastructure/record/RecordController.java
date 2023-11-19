@@ -14,8 +14,9 @@ import java.util.List;
 @RequestMapping("/api/record")
 public class RecordController {
     private final RecordService recordService;
+
     @GetMapping
-    public ResponseEntity<List<Record>> getRecords(){
+    public ResponseEntity<List<Record>> getRecords() {
         return ResponseEntity.ok(recordService.getRecords());
     }
 }
