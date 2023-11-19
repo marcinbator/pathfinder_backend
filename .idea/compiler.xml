@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pathfinder_service" />
+        <module name="pathfinder_auth" />
       </profile>
       <profile name="Annotation profile for pathfinder_backend" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -25,8 +25,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pathfinder_auth" options="-parameters" />
       <module name="pathfinder_backend" options="-parameters -Amapstruct.defaultComponentModel=spring" />
-      <module name="pathfinder_service" options="-parameters" />
     </option>
   </component>
 </project>

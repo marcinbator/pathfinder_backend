@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.bator</groupId>
-    <artifactId>pathfinder_service</artifactId>
+    <artifactId>pathfinder_auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>pathfinder_service</name>
     <description>pathfinder_service</description>

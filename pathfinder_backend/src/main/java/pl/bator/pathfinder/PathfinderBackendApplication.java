@@ -1,13 +1,13 @@
-package pl.bator.pathfinder_service;
+package pl.bator.pathfinder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PathfinderServiceApplication {
+public class PathfinderBackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PathfinderServiceApplication.class, args);
+        SpringApplication.run(PathfinderBackendApplication.class, args);
     }
 
 }

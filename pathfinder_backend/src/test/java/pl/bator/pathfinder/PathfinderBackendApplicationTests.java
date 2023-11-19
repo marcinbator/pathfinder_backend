@@ -1,11 +1,12 @@
-package pl.bator.pathfinder_service;
+package pl.bator.pathfinder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
-class PathfinderServiceApplicationTests {
-
+@ActiveProfiles("dev")
+class PathfinderBackendApplicationTests {
     @Test
     void contextLoads() {
     }
