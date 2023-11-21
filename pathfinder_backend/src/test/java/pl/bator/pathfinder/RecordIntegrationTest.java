@@ -38,7 +38,7 @@ public class RecordIntegrationTest {
     private JwtUtil jwtUtil;
 
     @Test
-    public void testGetRecords() throws Exception {
+    public void shouldGetRecords() throws Exception {
         //given
         Record record1 = new Record();
         Record record2 = new Record();

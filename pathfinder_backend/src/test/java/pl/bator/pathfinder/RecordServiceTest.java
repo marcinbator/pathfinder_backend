@@ -24,7 +24,7 @@ public class RecordServiceTest {
     private RecordRepository recordRepository;
 
     @Test
-    public void testGetRecords() {
+    public void shouldGetRecords() {
         //given
         Record record1 = new Record(1L, "Tytuł 1");
         Record record2 = new Record(2L, "Tytuł 2");

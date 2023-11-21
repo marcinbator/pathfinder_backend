@@ -26,7 +26,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(RecordController.class) //test only RecordController
 @WithMockUser(username = "marcinbator.ofc@gmail.com") //mock user
 public class RecordControllerTest {
-
     @Autowired
     private MockMvc mockMvc; //for mvc web mocking
     @Autowired
@@ -43,7 +42,7 @@ public class RecordControllerTest {
     }
 
     @Test
-    public void testGetRecords() throws Exception {
+    public void shouldGetRecords() throws Exception {
         //given
         List<Record> records = createRecords();
         String expectedJson = objectMapper.writeValueAsString(records);
