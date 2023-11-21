@@ -15,6 +15,7 @@ public class AuthService {
     private final WebClient webClient;
     private final JwtUtil jwtUtil;
 
+    //deprecation
     String connectBackend() {
         return webClient.get()
                 .uri("http://localhost:8080/api/record")

@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="auth service refactor">
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/config/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/config/JwtAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/config/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/entity/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/entity/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/repository/RecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/entity/repository/RecordRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/record/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/record/RecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordService.java" afterDir="false" />
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="backend service refactor">
+      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/test/java/pl/bator/pathfinder_service/AuthControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordServiceTest.java" afterDir="false" />
@@ -117,7 +113,22 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecordServiceTest">
+  <component name="RunManager" selected="JUnit.AuthControllerTest">
+    <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pathfinder_auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.bator.pathfinder_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.bator.pathfinder_service" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder_service.AuthControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PathfinderBackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pathfinder_backend" />
       <extension name="coverage">
@@ -216,6 +227,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthControllerTest" />
         <item itemvalue="JUnit.RecordServiceTest" />
         <item itemvalue="JUnit.RecordIntegrationTest" />
         <item itemvalue="JUnit.RecordControllerTest" />
@@ -297,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700593691972</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="backend service refactor">
+      <option name="closed" value="true" />
+      <created>1700593876677</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700593876677</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +331,7 @@
     <MESSAGE value="tests" />
     <MESSAGE value="tests comments" />
     <MESSAGE value="auth service refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth service refactor" />
+    <MESSAGE value="backend service refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend service refactor" />
   </component>
 </project>
