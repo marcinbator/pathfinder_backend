@@ -6,8 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
+import pl.bator.pathfinder.infrastructure.common.config.JwtUtil;
 import pl.bator.pathfinder.infrastructure.common.entity.Record;
 import pl.bator.pathfinder.infrastructure.common.repository.RecordRepository;
 
@@ -22,6 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ActiveProfiles("dev")
 @AutoConfigureMockMvc
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+@WithMockUser(username = "marcinbator.ofc@gmail.com")
 public class RecordIntegrationTest {
 
     @Autowired
@@ -30,6 +34,8 @@ public class RecordIntegrationTest {
     private ObjectMapper objectMapper;
     @Autowired
     private RecordRepository recordRepository;
+    @MockBean
+    private JwtUtil jwtUtil;
 
     @Test
     public void testGetRecords() throws Exception {
@@ -43,7 +49,8 @@ public class RecordIntegrationTest {
         recordRepository.deleteAll();
         recordRepository.saveAll(records);
         //then
-        mockMvc.perform(get("/api/record"))
+        mockMvc.perform(get("/api/record").header("Authorization", "Bearer " +
+                jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
                 .andExpect(status().isOk())
                 .andExpect(content().json(objectMapper.writeValueAsString(records)));
     }
