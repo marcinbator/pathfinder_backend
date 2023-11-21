@@ -1,4 +1,4 @@
-package pl.bator.pathfinder.infrastructure.common.config;
+package pl.bator.pathfinder.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -54,7 +54,7 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
 
     private SecurityConfig.JwtUserDetails mapToUserDetails(JwtUtil.Output.Deserialize deserialize) {
         return new SecurityConfig.JwtUserDetails(
-                null, deserialize.getEmail(),null
+                null, deserialize.getEmail(), null
         );
     }
 }

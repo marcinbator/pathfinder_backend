@@ -7,14 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.security.test.context.support.WithUserDetails;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import pl.bator.pathfinder.infrastructure.common.config.JwtAuthorizationFilter;
-import pl.bator.pathfinder.infrastructure.common.config.JwtUtil;
-import pl.bator.pathfinder.infrastructure.common.entity.Record;
-import pl.bator.pathfinder.infrastructure.record.RecordController;
-import pl.bator.pathfinder.infrastructure.record.RecordService;
+import pl.bator.pathfinder.config.JwtUtil;
+import pl.bator.pathfinder.entity.Record;
+import pl.bator.pathfinder.infrastructure.RecordController;
+import pl.bator.pathfinder.infrastructure.RecordService;
 
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +51,7 @@ public class RecordControllerTest {
         when(recordService.getRecords()).thenReturn(records);
         //then
         mockMvc.perform(get("/api/record").header("Authorization", "Bearer " + //include header with JWT
-                jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
+                        jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
                 .andExpect(status().isOk())
                 .andExpect(content().json(expectedJson));
     }

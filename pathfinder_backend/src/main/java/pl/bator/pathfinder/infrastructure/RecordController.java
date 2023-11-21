@@ -1,4 +1,4 @@
-package pl.bator.pathfinder.infrastructure.record;
+package pl.bator.pathfinder.infrastructure;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.bator.pathfinder.infrastructure.common.entity.Record;
+import pl.bator.pathfinder.entity.Record;
 
 import java.util.List;
 

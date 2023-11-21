@@ -10,9 +10,9 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
-import pl.bator.pathfinder.infrastructure.common.config.JwtUtil;
-import pl.bator.pathfinder.infrastructure.common.entity.Record;
-import pl.bator.pathfinder.infrastructure.common.repository.RecordRepository;
+import pl.bator.pathfinder.config.JwtUtil;
+import pl.bator.pathfinder.entity.Record;
+import pl.bator.pathfinder.entity.repository.RecordRepository;
 
 import java.util.Arrays;
 import java.util.List;
@@ -50,7 +50,7 @@ public class RecordIntegrationTest {
         recordRepository.saveAll(records);
         //then
         mockMvc.perform(get("/api/record").header("Authorization", "Bearer " +
-                jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
+                        jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
                 .andExpect(status().isOk())
                 .andExpect(content().json(objectMapper.writeValueAsString(records)));
     }

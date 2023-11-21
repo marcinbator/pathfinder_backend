@@ -1,6 +1,5 @@
-package pl.bator.pathfinder.infrastructure.common.config;
+package pl.bator.pathfinder.config;
 
-import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import lombok.AllArgsConstructor;
 import lombok.Value;
 import org.springframework.context.annotation.Bean;
@@ -21,6 +20,7 @@ import java.util.Set;
 @AllArgsConstructor
 public class SecurityConfig {
     private final JwtAuthorizationFilter jwtAuthorizationFilter;
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -33,6 +33,7 @@ public class SecurityConfig {
                 .addFilterBefore(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
+
     @Value
     public static class JwtUserDetails implements UserDetails {
         Long id;

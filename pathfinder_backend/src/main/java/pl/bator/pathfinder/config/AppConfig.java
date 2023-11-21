@@ -1,4 +1,4 @@
-package pl.bator.pathfinder.infrastructure.common.config;
+package pl.bator.pathfinder.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

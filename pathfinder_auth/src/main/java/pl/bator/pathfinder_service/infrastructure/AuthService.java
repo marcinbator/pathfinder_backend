@@ -14,6 +14,7 @@ import pl.bator.pathfinder_service.config.JwtUtil;
 public class AuthService {
     private final WebClient webClient;
     private final JwtUtil jwtUtil;
+
     String connectBackend() {
         return webClient.get()
                 .uri("http://localhost:8080/api/record")

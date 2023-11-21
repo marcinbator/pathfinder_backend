@@ -14,16 +14,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/get")
 public class AuthController {
     private final AuthService authService;
+
     @GetMapping
     public ResponseEntity<String> isInDb() {
         return ResponseEntity.ok(authService.connectBackend());
     }
+
     @GetMapping("/me")
     @PreAuthorize("isAuthenticated()")
     public ResponseEntity<String> me() {
-        var user = (OidcUser)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        var user = (OidcUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return ResponseEntity.ok(user.getEmail());
     }
+
     @GetMapping("/token")
     public ResponseEntity<String> getSessionToken() {
         return ResponseEntity.ok(authService.getToken());
