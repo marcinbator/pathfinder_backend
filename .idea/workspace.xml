@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="auth tests implementation">
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="Merge remote-tracking branch 'origin/auth' into auth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,34 +61,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;auth&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/marci/Desktop/Repozytorium/Projekty/Projekty webowe/Spring/PathFinder/pathfinder&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;15cb706e7ecb87faf82d8c0346b16689&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "auth",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/marci/Desktop/Repozytorium/Projekty/Projekty webowe/Spring/PathFinder/pathfinder",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "spring.configuration.checksum": "15cb706e7ecb87faf82d8c0346b16689",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -116,8 +119,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AuthControllerTest">
-    <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PathfinderAuthApplicationTests">
+    <configuration name="PathfinderAuthApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pathfinder_auth" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +129,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.bator.pathfinder_service" />
-      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder_service.AuthControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder_service.PathfinderAuthApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PathfinderAuthApplicationTests" />
         <item itemvalue="JUnit.RecordServiceTest" />
         <item itemvalue="JUnit.RecordIntegrationTest" />
         <item itemvalue="JUnit.RecordControllerTest" />
         <item itemvalue="JUnit.PathfinderBackendApplicationTests" />
-        <item itemvalue="JUnit.AuthControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +251,9 @@
       <updated>1700411371282</updated>
       <workItem from="1700411373195" duration="1187000" />
       <workItem from="1700597609314" duration="41000" />
+      <workItem from="1700597690655" duration="98000" />
+      <workItem from="1700597810040" duration="25000" />
+      <workItem from="1700597843614" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="project rebuild">
       <option name="closed" value="true" />
@@ -337,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700595602855</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/auth' into auth">
+      <option name="closed" value="true" />
+      <created>1700597771014</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700597771014</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +378,7 @@
     <MESSAGE value="auth service refactor" />
     <MESSAGE value="backend service refactor" />
     <MESSAGE value="auth tests implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth tests implementation" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/auth' into auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/auth' into auth" />
   </component>
 </project>
