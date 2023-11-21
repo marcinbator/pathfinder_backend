@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="basic auth security setup">
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/UserPrincipal.java" afterDir="false" />
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="basic jwt generation">
+      <change afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/config/JwtAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/config/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/common/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +82,7 @@
       <recent name="C:\Users\marci\Desktop\Repozytorium\Projekty\Projekty webowe\Spring\PathFinder\pathfinder" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.bator.pathfinder.infrastructure.common.config" />
       <recent name="pl.bator.pathfinder_service" />
     </key>
   </component>
@@ -91,7 +94,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PathfinderAuthApplication">
+  <component name="RunManager" selected="Spring Boot.PathfinderBackendApplication">
     <configuration name="PathfinderBackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pathfinder_backend" />
       <extension name="coverage">
@@ -231,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700588700923</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="basic jwt generation">
+      <option name="closed" value="true" />
+      <created>1700589948001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700589948001</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,17 +251,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project rebuild" />
     <MESSAGE value="basic auth security setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic auth security setup" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="basic jwt generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic jwt generation" />
   </component>
 </project>
