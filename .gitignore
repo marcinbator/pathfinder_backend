@@ -1,9 +1,8 @@
-../HELP.md
+HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-../pathfinder_auth/.env
 
 ### STS ###
 .apt_generated
