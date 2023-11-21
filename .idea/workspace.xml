@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="Merge remote-tracking branch 'origin/auth' into auth">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +75,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "auth",
+    "git-widget-placeholder": "Merging auth",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/marci/Desktop/Repozytorium/Projekty/Projekty webowe/Spring/PathFinder/pathfinder",
     "node.js.detected.package.eslint": "true",
