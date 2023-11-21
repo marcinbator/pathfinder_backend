@@ -24,16 +24,16 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@RunWith(SpringRunner.class)
-@WebMvcTest(RecordController.class)
-@WithMockUser(username = "marcinbator.ofc@gmail.com")
+@RunWith(SpringRunner.class) //run spring context
+@WebMvcTest(RecordController.class) //test only RecordController
+@WithMockUser(username = "marcinbator.ofc@gmail.com") //mock user
 public class RecordControllerTest {
 
     @Autowired
-    private MockMvc mockMvc;
+    private MockMvc mockMvc; //for mvc web mocking
     @Autowired
     private ObjectMapper objectMapper;
-    @MockBean
+    @MockBean //mock to avoid autowiring
     private JwtUtil jwtUtil;
     @MockBean
     private RecordService recordService;
@@ -52,7 +52,7 @@ public class RecordControllerTest {
         //when
         when(recordService.getRecords()).thenReturn(records);
         //then
-        mockMvc.perform(get("/api/record").header("Authorization", "Bearer " +
+        mockMvc.perform(get("/api/record").header("Authorization", "Bearer " + //include header with JWT
                 jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
                 .andExpect(status().isOk())
                 .andExpect(content().json(expectedJson));

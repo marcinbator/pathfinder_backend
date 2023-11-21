@@ -23,9 +23,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @ActiveProfiles("dev")
-@AutoConfigureMockMvc
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @WithMockUser(username = "marcinbator.ofc@gmail.com")
+@AutoConfigureMockMvc //for integration tests
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE) //for db integration tests
 public class RecordIntegrationTest {
 
     @Autowired

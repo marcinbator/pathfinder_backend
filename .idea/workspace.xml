@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="basic jwt workflow for client service">
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="tests">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/PathfinderBackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/PathfinderBackendApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordIntegrationTest.java" afterDir="false" />
     </list>
@@ -67,6 +69,11 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "spring.configuration.checksum": "15cb706e7ecb87faf82d8c0346b16689",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -101,7 +108,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecordIntegrationTest">
+  <component name="RunManager" selected="JUnit.RecordServiceTest">
     <configuration name="PathfinderBackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pathfinder_backend" />
       <extension name="coverage">
@@ -200,9 +207,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecordServiceTest" />
         <item itemvalue="JUnit.RecordIntegrationTest" />
         <item itemvalue="JUnit.RecordControllerTest" />
-        <item itemvalue="JUnit.RecordServiceTest" />
         <item itemvalue="JUnit.PathfinderBackendApplicationTests" />
       </list>
     </recent_temporary>
@@ -257,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700590847465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tests">
+      <option name="closed" value="true" />
+      <created>1700592195777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700592195777</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +283,7 @@
     <MESSAGE value="basic auth security setup" />
     <MESSAGE value="basic jwt generation" />
     <MESSAGE value="basic jwt workflow for client service" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic jwt workflow for client service" />
+    <MESSAGE value="tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests" />
   </component>
 </project>
