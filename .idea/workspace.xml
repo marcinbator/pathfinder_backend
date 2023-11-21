@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="project rebuild">
-      <change afterPath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -64,6 +67,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "spring.configuration.checksum": "15cb706e7ecb87faf82d8c0346b16689",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,7 +85,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecordServiceTest">
+  <component name="RunManager" selected="Spring Boot.PathfinderAuthApplication">
     <configuration name="PathfinderBackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pathfinder_backend" />
       <extension name="coverage">
