@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="tests">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="tests comments">
+      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/PathfinderBackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/PathfinderBackendApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/test/java/pl/bator/pathfinder/RecordIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/UserPrincipal.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700592195777</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tests comments">
+      <option name="closed" value="true" />
+      <created>1700593363116</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700593363116</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +294,7 @@
     <MESSAGE value="basic jwt generation" />
     <MESSAGE value="basic jwt workflow for client service" />
     <MESSAGE value="tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests" />
+    <MESSAGE value="tests comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests comments" />
   </component>
 </project>

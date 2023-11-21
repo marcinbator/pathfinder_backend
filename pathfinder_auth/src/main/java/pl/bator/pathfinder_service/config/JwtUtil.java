@@ -1,4 +1,4 @@
-package pl.bator.pathfinder_service;
+package pl.bator.pathfinder_service.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;

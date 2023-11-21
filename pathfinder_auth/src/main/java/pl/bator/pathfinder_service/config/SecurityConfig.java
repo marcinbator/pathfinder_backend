@@ -1,4 +1,4 @@
-package pl.bator.pathfinder_service;
+package pl.bator.pathfinder_service.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
