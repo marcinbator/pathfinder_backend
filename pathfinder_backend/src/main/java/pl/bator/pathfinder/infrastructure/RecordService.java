@@ -1,9 +1,9 @@
-package pl.bator.pathfinder.infrastructure.record;
+package pl.bator.pathfinder.infrastructure;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.bator.pathfinder.infrastructure.common.entity.Record;
-import pl.bator.pathfinder.infrastructure.common.repository.RecordRepository;
+import pl.bator.pathfinder.entity.Record;
+import pl.bator.pathfinder.entity.repository.RecordRepository;
 
 import java.util.List;
 

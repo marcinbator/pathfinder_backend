@@ -5,9 +5,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import pl.bator.pathfinder.infrastructure.common.entity.Record;
-import pl.bator.pathfinder.infrastructure.common.repository.RecordRepository;
-import pl.bator.pathfinder.infrastructure.record.RecordService;
+import pl.bator.pathfinder.entity.Record;
+import pl.bator.pathfinder.entity.repository.RecordRepository;
+import pl.bator.pathfinder.infrastructure.RecordService;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,7 +24,7 @@ public class RecordServiceTest {
     private RecordRepository recordRepository;
 
     @Test
-    public void testGetRecords() {
+    public void shouldGetRecords() {
         //given
         Record record1 = new Record(1L, "Tytuł 1");
         Record record2 = new Record(2L, "Tytuł 2");

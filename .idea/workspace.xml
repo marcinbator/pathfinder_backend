@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="01981fba-0b38-44c7-82d1-6c2bf11d9fbc" />
+        <option name="url" value="https://github.com/marcinbator/pathfinder_backend.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2YOzMteANUixy2iEh3oY3T9OoKM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging auth",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/marci/Desktop/Repozytorium/Projekty/Projekty webowe/Spring/PathFinder/pathfinder",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "spring.configuration.checksum": "15cb706e7ecb87faf82d8c0346b16689",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marci\Desktop\Repozytorium\Projekty\Projekty webowe\Spring\PathFinder\pathfinder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marci\Desktop\Repozytorium\Projekty\Projekty webowe\Spring\PathFinder\pathfinder\pathfinder_auth" />
+      <recent name="C:\Users\marci\Desktop\Repozytorium\Projekty\Projekty webowe\Spring\PathFinder\pathfinder" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.bator.pathfinder" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.bator.pathfinder.infrastructure.common.config" />
+      <recent name="pl.bator.pathfinder_service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="JUnit" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PathfinderAuthApplicationTests">
+    <configuration name="PathfinderAuthApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pathfinder_auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.bator.pathfinder_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.bator.pathfinder_service" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder_service.PathfinderAuthApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathfinderBackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pathfinder_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.bator.pathfinder.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.bator.pathfinder" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder.PathfinderBackendApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecordControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pathfinder_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.bator.pathfinder.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.bator.pathfinder" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder.RecordControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecordIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pathfinder_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.bator.pathfinder.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.bator.pathfinder" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder.RecordIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecordServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pathfinder_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.bator.pathfinder.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.bator.pathfinder" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder.RecordServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathfinderAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <module name="pathfinder_auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.bator.pathfinder_service.PathfinderAuthApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PathfinderBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <module name="pathfinder_backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.bator.pathfinder.PathfinderBackendApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PathfinderAuthApplicationTests" />
+        <item itemvalue="JUnit.RecordServiceTest" />
+        <item itemvalue="JUnit.RecordIntegrationTest" />
+        <item itemvalue="JUnit.RecordControllerTest" />
+        <item itemvalue="JUnit.PathfinderBackendApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="" />
+      <created>1700411371282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700411371282</updated>
+      <workItem from="1700411373195" duration="1187000" />
+      <workItem from="1700597609314" duration="41000" />
+      <workItem from="1700597690655" duration="98000" />
+      <workItem from="1700597810040" duration="25000" />
+      <workItem from="1700597843614" duration="63000" />
+    </task>
+    <task id="LOCAL-00001" summary="project rebuild">
+      <option name="closed" value="true" />
+      <created>1700411629421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700411629421</updated>
+    </task>
+    <task id="LOCAL-00002" summary="project rebuild">
+      <option name="closed" value="true" />
+      <created>1700411661579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700411661579</updated>
+    </task>
+    <task id="LOCAL-00003" summary="basic auth security setup">
+      <option name="closed" value="true" />
+      <created>1700588700923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700588700923</updated>
+    </task>
+    <task id="LOCAL-00004" summary="basic jwt generation">
+      <option name="closed" value="true" />
+      <created>1700589948001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700589948001</updated>
+    </task>
+    <task id="LOCAL-00005" summary="basic jwt workflow for client service">
+      <option name="closed" value="true" />
+      <created>1700590847465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700590847465</updated>
+    </task>
+    <task id="LOCAL-00006" summary="tests">
+      <option name="closed" value="true" />
+      <created>1700592195777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700592195777</updated>
+    </task>
+    <task id="LOCAL-00007" summary="tests comments">
+      <option name="closed" value="true" />
+      <created>1700593363116</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700593363116</updated>
+    </task>
+    <task id="LOCAL-00008" summary="auth service refactor">
+      <option name="closed" value="true" />
+      <created>1700593691972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700593691972</updated>
+    </task>
+    <task id="LOCAL-00009" summary="backend service refactor">
+      <option name="closed" value="true" />
+      <created>1700593876677</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700593876677</updated>
+    </task>
+    <task id="LOCAL-00010" summary="auth tests implementation">
+      <option name="closed" value="true" />
+      <created>1700595573957</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700595573957</updated>
+    </task>
+    <task id="LOCAL-00011" summary="auth tests implementation">
+      <option name="closed" value="true" />
+      <created>1700595602855</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700595602855</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/auth' into auth">
+      <option name="closed" value="true" />
+      <created>1700597771014</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700597771014</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project rebuild" />
+    <MESSAGE value="basic auth security setup" />
+    <MESSAGE value="basic jwt generation" />
+    <MESSAGE value="basic jwt workflow for client service" />
+    <MESSAGE value="tests" />
+    <MESSAGE value="tests comments" />
+    <MESSAGE value="auth service refactor" />
+    <MESSAGE value="backend service refactor" />
+    <MESSAGE value="auth tests implementation" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/auth' into auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/auth' into auth" />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package pl.bator.pathfinder.infrastructure.common.entity;
+package pl.bator.pathfinder.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
