@@ -52,7 +52,7 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
         return null;
     }
 
-    private SecurityConfig.JwtUserDetails mapToUserDetails(JwtUtil.Output.Deserialize deserialize) {
+    private SecurityConfig.JwtUserDetails mapToUserDetails(JwtUtil.Input deserialize) {
         return new SecurityConfig.JwtUserDetails(
                 null, deserialize.getEmail(), null
         );
