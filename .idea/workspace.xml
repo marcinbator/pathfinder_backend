@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editstarters/initializr-cache.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/ServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/infrastructure/RecordController.java" afterDir="false" />
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="Merge pull request #2 from marcinbator/auth&#10;&#10;auth JWT workflow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/test/java/pl/bator/pathfinder_service/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/test/java/pl/bator/pathfinder_service/AuthControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Marcin Bator &lt;marcinbator.ofc@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -75,7 +78,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging auth&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/marci/Desktop/Repozytorium/Projekty/Projekty webowe/Spring/PathFinder/pathfinder&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -123,8 +126,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PathfinderAuthApplicationTests">
-    <configuration name="PathfinderAuthApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RecordControllerTest">
+    <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pathfinder_auth" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +136,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.bator.pathfinder_service" />
-      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder_service.PathfinderAuthApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="pl.bator.pathfinder_service.AuthControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecordControllerTest" />
+        <item itemvalue="JUnit.AuthControllerTest" />
         <item itemvalue="JUnit.RecordIntegrationTest" />
         <item itemvalue="JUnit.PathfinderBackendApplicationTests" />
         <item itemvalue="JUnit.RecordServiceTest" />
-        <item itemvalue="JUnit.RecordControllerTest" />
-        <item itemvalue="JUnit.PathfinderAuthApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -258,6 +261,7 @@
       <workItem from="1700597690655" duration="98000" />
       <workItem from="1700597810040" duration="25000" />
       <workItem from="1700597843614" duration="63000" />
+      <workItem from="1700643017262" duration="1351000" />
     </task>
     <task id="LOCAL-00001" summary="project rebuild">
       <option name="closed" value="true" />
@@ -355,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700597771014</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merge pull request #2 from marcinbator/auth&#10;&#10;auth JWT workflow">
+      <option name="closed" value="true" />
+      <created>1700598669472</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700598669472</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,6 +395,7 @@
     <MESSAGE value="backend service refactor" />
     <MESSAGE value="auth tests implementation" />
     <MESSAGE value="Merge remote-tracking branch 'origin/auth' into auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/auth' into auth" />
+    <MESSAGE value="Merge pull request #2 from marcinbator/auth&#10;&#10;auth JWT workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge pull request #2 from marcinbator/auth&#10;&#10;auth JWT workflow" />
   </component>
 </project>

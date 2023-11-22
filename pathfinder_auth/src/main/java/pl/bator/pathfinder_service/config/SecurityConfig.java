@@ -1,5 +1,6 @@
 package pl.bator.pathfinder_service.config;
 
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +24,9 @@ public class SecurityConfig {
 //                        .anyRequest().authenticated()
 //                ) todo
                 .oauth2Login(Customizer.withDefaults())
-                .formLogin().disable();
+                .formLogin().disable()
+                .exceptionHandling().authenticationEntryPoint((request, response, authException) ->
+                        response.sendError(HttpServletResponse.SC_UNAUTHORIZED));
         return http.build();
     }
 }
