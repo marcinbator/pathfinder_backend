@@ -19,6 +19,7 @@ public class AuthService {
     String connectBackend() {
         return webClient.get()
                 .uri("http://localhost:8080/api/record")
+                .header("Authorization", "Bearer " + getToken())
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
@@ -32,7 +33,6 @@ public class AuthService {
                 .map(user -> jwtUtil.generateToken(new JwtUtil.Input(
                         user.getEmail() //todo authorities
                 )))
-                .map(JwtUtil.Output::getBearer)
                 .getOrNull();
     }
 }
