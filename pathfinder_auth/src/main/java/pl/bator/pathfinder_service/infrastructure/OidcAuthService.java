@@ -5,10 +5,10 @@ import lombok.AllArgsConstructor;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
 import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
-import org.springframework.security.oauth2.core.oidc.OidcUserInfo;
 import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.stereotype.Service;
+import pl.bator.pathfinder_service.config.SecurityConfig;
 import pl.bator.pathfinder_service.entity.Role;
 import pl.bator.pathfinder_service.entity.User;
 import pl.bator.pathfinder_service.entity.UserPrincipal;
@@ -20,6 +20,7 @@ import java.util.Map;
 @AllArgsConstructor
 public class OidcAuthService extends OidcUserService {
     private final UserRepository userRepository;
+    private final SecurityConfig.SecurityProperties securityProperties;
     @Override
     public OidcUser loadUser(OidcUserRequest userRequest) throws OAuth2AuthenticationException {
         OidcUser oidcUser = super.loadUser(userRequest);
@@ -28,9 +29,8 @@ public class OidcAuthService extends OidcUserService {
                 .findByUsername((String) attributes.get("email")) //optimize
                 .orElseGet(() -> createUser(attributes));
         userRepository.save(user);
-        var userPrincipal = UserPrincipal.map(user);
-        return new DefaultOidcUser(userPrincipal.getAuthorities(), oidcUser.getIdToken(),
-                new OidcUserInfo(attributes), "email");
+        var userPrincipal = UserPrincipal.map(user, securityProperties.getPrivileges(user.getRole()));
+        return new DefaultOidcUser(userPrincipal.getAuthorities(), oidcUser.getIdToken());
     }
 
     private User createUser(Map<String, Object> attributes) {

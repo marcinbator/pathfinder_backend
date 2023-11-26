@@ -22,10 +22,10 @@ public class UserPrincipal implements UserDetails, OAuth2User {
     private final boolean isActive = true;
     private final Set<SimpleGrantedAuthority> authorities;
     private final transient Map<String, Object> attributes;
-    public static UserPrincipal map(User user){
+    public static UserPrincipal map(User user, Set<SimpleGrantedAuthority> authorities){
         return new UserPrincipal(
                 user.getId(), user.getGoogleId(), user.getUsername(), user.getEmail(), user.getPhoto(),
-                Set.of(new SimpleGrantedAuthority(user.getRole().toString())), Map.of(
+                authorities, Map.of(
                         "id", user.getId(),
                         "sub", user.getGoogleId(),
                         "email", user.getEmail(),

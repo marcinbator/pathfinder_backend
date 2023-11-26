@@ -34,7 +34,7 @@ public class AuthController {
     @PreAuthorize("isAuthenticated()")
     public ResponseEntity<String> me() {
         var user = (OidcUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        return ResponseEntity.ok(user.getEmail());
+        return ResponseEntity.ok(user.getAttributes().toString());
     }
 
     @GetMapping("/token")
