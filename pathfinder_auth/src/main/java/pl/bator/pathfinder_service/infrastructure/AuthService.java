@@ -8,14 +8,15 @@ import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import pl.bator.pathfinder_service.config.JwtUtil;
+import pl.bator.pathfinder_service.entity.User;
 
 @Service
 @AllArgsConstructor
 public class AuthService {
     private final WebClient webClient;
     private final JwtUtil jwtUtil;
+    private final OidcAuthService oidcAuthService;
 
-    //deprecation
     String connectBackend() {
         return webClient.get()
                 .uri("http://localhost:8080/api/record")
@@ -34,5 +35,9 @@ public class AuthService {
                         user.getEmail() //todo authorities
                 )))
                 .getOrNull();
+    }
+
+    User getCurrentUser() {
+        return oidcAuthService.getCurrentUser();
     }
 }

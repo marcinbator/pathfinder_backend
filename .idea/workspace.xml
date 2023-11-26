@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="security config optimalization for JPA + swagger config">
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/UserPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/OidcAuthService.java" afterDir="false" />
+    <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="oauth2 userPrincipal config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/OidcAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/OidcAuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,7 +384,7 @@
       <workItem from="1700597843614" duration="63000" />
       <workItem from="1700643017262" duration="3208000" />
       <workItem from="1700677077638" duration="5000" />
-      <workItem from="1701011881322" duration="2703000" />
+      <workItem from="1701011881322" duration="7924000" />
     </task>
     <task id="LOCAL-00001" summary="project rebuild">
       <option name="closed" value="true" />
@@ -516,7 +514,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700676780297</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="basic oauth2 userPrincipal config">
+      <option name="closed" value="true" />
+      <created>1701014921896</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701014921896</updated>
+    </task>
+    <task id="LOCAL-00018" summary="oauth2 userPrincipal config">
+      <option name="closed" value="true" />
+      <created>1701018182013</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701018182013</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,6 +561,8 @@
     <MESSAGE value="Merge pull request #2 from marcinbator/auth&#10;&#10;auth JWT workflow" />
     <MESSAGE value="other usecase tests" />
     <MESSAGE value="security config optimalization for JPA + swagger config" />
-    <option name="LAST_COMMIT_MESSAGE" value="security config optimalization for JPA + swagger config" />
+    <MESSAGE value="basic oauth2 userPrincipal config" />
+    <MESSAGE value="oauth2 userPrincipal config" />
+    <option name="LAST_COMMIT_MESSAGE" value="oauth2 userPrincipal config" />
   </component>
 </project>

@@ -22,18 +22,14 @@ public class UserPrincipal implements UserDetails, OAuth2User {
     private final boolean isActive = true;
     private final Set<SimpleGrantedAuthority> authorities;
     private final transient Map<String, Object> attributes;
-    public static UserPrincipal map(User user){
+
+    public static UserPrincipal map(User user, Set<SimpleGrantedAuthority> authorities, Map<String, Object> attributes) {
         return new UserPrincipal(
                 user.getId(), user.getGoogleId(), user.getUsername(), user.getEmail(), user.getPhoto(),
-                Set.of(new SimpleGrantedAuthority(user.getRole().toString())), Map.of(
-                        "id", user.getId(),
-                        "sub", user.getGoogleId(),
-                        "email", user.getEmail(),
-                        "role", user.getRole(),
-                        "login", user.getUsername(),
-                        "avatar_url", user.getPhoto())
+                authorities, attributes
         );
     }
+
     @Override
     public boolean isAccountNonExpired() {
         return isActive;

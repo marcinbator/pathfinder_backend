@@ -8,11 +8,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pl.bator.pathfinder_service.entity.User;
 
 @RestController
 @RequiredArgsConstructor
@@ -32,9 +31,8 @@ public class AuthController {
             @ApiResponse(responseCode = "401", description = "Unauthorized")
     })
     @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<String> me() {
-        var user = (OidcUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        return ResponseEntity.ok(user.getEmail());
+    public ResponseEntity<User> me() {
+        return ResponseEntity.ok(authService.getCurrentUser());
     }
 
     @GetMapping("/token")
