@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="4b0d04c3-7e83-45e4-b679-438e9610b82e" name="Changes" comment="oauth2 userPrincipal config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/UserPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/PathfinderAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/PathfinderAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/OidcAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/java/pl/bator/pathfinder_service/infrastructure/OidcAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/test/java/pl/bator/pathfinder_service/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/test/java/pl/bator/pathfinder_service/AuthControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_auth/src/test/java/pl/bator/pathfinder_service/PathfinderAuthApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_auth/src/test/java/pl/bator/pathfinder_service/PathfinderAuthApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/entity/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/java/pl/bator/pathfinder/entity/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pathfinder_backend/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -384,7 +389,8 @@
       <workItem from="1700597843614" duration="63000" />
       <workItem from="1700643017262" duration="3208000" />
       <workItem from="1700677077638" duration="5000" />
-      <workItem from="1701011881322" duration="7924000" />
+      <workItem from="1701011881322" duration="8091000" />
+      <workItem from="1701525017345" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="project rebuild">
       <option name="closed" value="true" />
@@ -530,7 +536,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701018182013</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="oauth2 userPrincipal config">
+      <option name="closed" value="true" />
+      <created>1701020682553</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701020682553</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

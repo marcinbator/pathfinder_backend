@@ -23,6 +23,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+      default_schema: pathfinder_auth
   jackson:
     serialization:
       indent-output: true

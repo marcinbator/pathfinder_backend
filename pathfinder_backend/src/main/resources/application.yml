@@ -3,6 +3,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+      default_schema: pathfinder_backend
   jackson:
     serialization:
       indent-output: true
