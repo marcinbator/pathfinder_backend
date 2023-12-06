@@ -49,13 +49,13 @@ public class AuthController {
     @GetMapping("/login")
     @Operation(summary = "Get login uri (paste it in browser)")
     public ResponseEntity<String> getLoginUri() {
-        return ResponseEntity.ok("http://localhost:8081"+loginUri+"/google");
+        return ResponseEntity.ok("http://localhost:8081" + loginUri + "/google");
     }
 
     @Operation(summary = "Get logout uri (paste it in browser)")
     @GetMapping("/logout")
     public ResponseEntity<String> getLogoutUri() {
-        return ResponseEntity.ok("http://localhost:8081"+logoutUri);
+        return ResponseEntity.ok("http://localhost:8081" + logoutUri);
     }
 
     @GetMapping

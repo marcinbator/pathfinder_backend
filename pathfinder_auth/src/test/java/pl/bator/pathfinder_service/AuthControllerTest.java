@@ -24,6 +24,7 @@ public class AuthControllerTest {
     private MockMvc mockMvc;
     @MockBean
     private AuthService authService; //has to be mocked
+
     @Test
     public void shouldReturn401Or302() throws Exception {
         mockMvc.perform(get("/api/get/me"))

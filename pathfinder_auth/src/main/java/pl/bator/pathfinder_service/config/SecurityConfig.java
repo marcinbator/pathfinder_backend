@@ -38,6 +38,7 @@ public class SecurityConfig {
     @Value("${pathfinder-auth.security.allowedRedirectUris}")
     private String[] allowedRedirectUris;
     private final OidcAuthService oidcAuthService;
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
