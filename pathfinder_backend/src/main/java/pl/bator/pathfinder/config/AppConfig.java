@@ -1,5 +1,7 @@
 package pl.bator.pathfinder.config;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
@@ -8,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@OpenAPIDefinition(info = @Info(title = "Pathfinder_auth microservice API documentation", description = "Author: Marcin Bator"))
 public class AppConfig {
     @Bean
     public OpenAPI customizeOpenAPI() {

@@ -2,8 +2,7 @@ pathfinder-auth:
   jwt:
     expiration-mins: 60
   security:
-    auth:
-      redirectUri: http://localhost:8081/api/docs.html
+    redirectUri: http://localhost:8081/api/docs.html
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5437/data

@@ -3,6 +3,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+      default_schema: pathfinder_backend
   jackson:
     serialization:
       indent-output: true
@@ -16,4 +17,5 @@ springdoc:
     path: /api/docs.html
 pathfinder-auth:
   jwt:
-    secret-key: P8K53KMRFBWDRH3EBWYV3B9MQG6QU8V59PYRWGDG96MNDCYBQCJ5EEGXT5ZF76E6
+    expiration-mins: 15
+    secret-key: ${JWT-KEY}

@@ -33,11 +33,13 @@ public class RecordControllerTest {
     private JwtUtil jwtUtil;
     @MockBean
     private RecordService recordService;
+
     public static List<Record> createRecords() {
         Record record1 = new Record(1L, "Tytuł 1");
         Record record2 = new Record(2L, "Tytuł 2");
         return Arrays.asList(record1, record2);
     }
+
     @Test
     @WithMockUser(username = "marcinbator.ofc@gmail.com") //mock user
     public void shouldGetRecords() throws Exception {
@@ -52,6 +54,7 @@ public class RecordControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json(expectedJson));
     }
+
     @Test
     public void shouldReturn401() throws Exception {
         mockMvc.perform(get("/api/record"))
