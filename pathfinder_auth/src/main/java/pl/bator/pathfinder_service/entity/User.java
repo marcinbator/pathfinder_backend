@@ -9,9 +9,9 @@ import lombok.Data;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Long id;
-    @Column(nullable = false, unique = true)
+    @Column(unique = true)
     private String googleId;
     private String username;
     @Email
@@ -19,4 +19,12 @@ public class User {
     private String photo;
     @Enumerated(EnumType.STRING)
     private Role role;
+    @OneToOne
+    private Location primaryLocation;
+    @Enumerated(EnumType.STRING)
+    private AccountType accountType;
+}
+
+enum AccountType {
+    STUDENT, MANAGER, ADMIN
 }

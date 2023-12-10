@@ -9,11 +9,14 @@ import io.jsonwebtoken.security.Keys;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 @Component
 public class JwtUtil {
@@ -23,8 +26,13 @@ public class JwtUtil {
     private String secretKey;
 
     public String generateToken(Input input) {
+        final var authorities = input.getAuthorities()
+                .stream()
+                .map(SimpleGrantedAuthority::getAuthority)
+                .toList();
         final var claims = Map.of(
-                "email", input.email
+                "email", input.email,
+                "authorities", authorities
         );
         return createToken(input.email, claims);
     }
@@ -41,13 +49,14 @@ public class JwtUtil {
                 .compact();
     }
 
-    public Input deserializeToken(String token) {
+    public Output deserializeToken(String token) {
         Claims claims = Jwts.parserBuilder()
                 .setSigningKey(getSignKey())
                 .build()
                 .parseClaimsJws(token).getBody();
-        return new Input(
-                claims.get("email", String.class)
+        return new Output(
+                claims.get("email", String.class),
+                claims.get("authorities", List.class)
         );
     }
 
@@ -72,5 +81,13 @@ public class JwtUtil {
     @AllArgsConstructor
     public static class Input {
         private String email;
+        private Set<SimpleGrantedAuthority> authorities;
+    }
+
+    @Data
+    @AllArgsConstructor
+    public static class Output {
+        private String email;
+        private List<String> authorities;
     }
 }
