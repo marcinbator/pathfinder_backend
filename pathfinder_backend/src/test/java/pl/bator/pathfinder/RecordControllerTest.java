@@ -50,7 +50,7 @@ public class RecordControllerTest {
         when(recordService.getRecords()).thenReturn(records);
         //then
         mockMvc.perform(get("/api/record").header("Authorization", "Bearer " + //include header with JWT
-                        jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
+                        jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com", null))))
                 .andExpect(status().isOk())
                 .andExpect(content().json(expectedJson));
     }

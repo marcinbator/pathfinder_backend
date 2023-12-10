@@ -50,7 +50,7 @@ public class RecordIntegrationTest {
         recordRepository.saveAll(records);
         //then
         mockMvc.perform(get("/api/record").header("Authorization", "Bearer " +
-                        jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com"))))
+                        jwtUtil.generateToken(new JwtUtil.Input("marcinbator.ofc@gmail.com", null))))
                 .andExpect(status().isOk())
                 .andExpect(content().json(objectMapper.writeValueAsString(records)));
     }

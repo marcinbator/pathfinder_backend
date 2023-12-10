@@ -18,6 +18,8 @@ public class UserPrincipal implements UserDetails, OAuth2User {
     private final Role role = Role.ROLE_USER;
     private String email;
     private String photo;
+    private Location primaryLocation;
+    private AccountType accountType;
     private final String password = null;
     private final boolean isActive = true;
     private final Set<SimpleGrantedAuthority> authorities;
@@ -25,7 +27,7 @@ public class UserPrincipal implements UserDetails, OAuth2User {
 
     public static UserPrincipal map(User user, Set<SimpleGrantedAuthority> authorities, Map<String, Object> attributes) {
         return new UserPrincipal(
-                user.getId(), user.getGoogleId(), user.getUsername(), user.getEmail(), user.getPhoto(),
+                user.getId(), user.getGoogleId(), user.getUsername(), user.getEmail(), user.getPhoto(), user.getPrimaryLocation(), user.getAccountType(),
                 authorities, attributes
         );
     }

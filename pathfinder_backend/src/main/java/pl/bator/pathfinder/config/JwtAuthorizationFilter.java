@@ -8,6 +8,7 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
@@ -15,6 +16,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
@@ -33,7 +35,7 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
             if (jwt != null && jwtUtil.isTokenValid(jwt)) {
                 var jwtUserDetails = mapToUserDetails(jwtUtil.deserializeToken(jwt));
                 var authentication = new UsernamePasswordAuthenticationToken(
-                        jwtUserDetails, null, null
+                        jwtUserDetails, null, jwtUserDetails.getAuthorities()
                 );
                 authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(authentication);
@@ -52,9 +54,13 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
         return null;
     }
 
-    private SecurityConfig.JwtUserDetails mapToUserDetails(JwtUtil.Input deserialize) {
+    private SecurityConfig.JwtUserDetails mapToUserDetails(JwtUtil.Output deserialize) {
+        var deserializedAuthorities = deserialize.getAuthorities()
+                .stream()
+                .map(SimpleGrantedAuthority::new)
+                .collect(Collectors.toSet());
         return new SecurityConfig.JwtUserDetails(
-                null, deserialize.getEmail(), null
+                null, deserialize.getEmail(), deserializedAuthorities
         );
     }
 }
