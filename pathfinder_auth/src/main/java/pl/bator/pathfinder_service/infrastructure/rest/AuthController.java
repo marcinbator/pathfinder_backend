@@ -1,4 +1,4 @@
-package pl.bator.pathfinder_service.infrastructure;
+package pl.bator.pathfinder_service.infrastructure.rest;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -11,29 +11,18 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.bator.pathfinder_service.entity.User;
+import pl.bator.pathfinder_service.infrastructure.OidcAuthService;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/get")
+@RequestMapping("/api/auth")
 @Tag(name = "Auth", description = "Authentication controller")
 public class AuthController {
-    private final AuthService authService;
+    private final OidcAuthService oidcAuthService;
     @Value("${pathfinder-auth.security.loginUri}")
     private String loginUri;
     @Value("${pathfinder-auth.security.logoutUri}")
     private String logoutUri;
-
-    @GetMapping("/me")
-    @Operation(summary = "Get current user details")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "User details"),
-            @ApiResponse(responseCode = "401", description = "Unauthorized")
-    })
-    @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<User> me() {
-        return ResponseEntity.ok(authService.getCurrentUser());
-    }
 
     @GetMapping("/token")
     @Operation(summary = "Get session token for backend communication")
@@ -43,7 +32,7 @@ public class AuthController {
     })
     @PreAuthorize("isAuthenticated()")
     public ResponseEntity<String> getSessionToken() {
-        return ResponseEntity.ok(authService.getToken());
+        return ResponseEntity.ok(oidcAuthService.getToken());
     }
 
     @GetMapping("/login")
@@ -58,14 +47,4 @@ public class AuthController {
         return ResponseEntity.ok("http://localhost:8081" + logoutUri);
     }
 
-    @GetMapping
-    @Operation(summary = "Synchronous connection to backend test")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Get token"),
-            @ApiResponse(responseCode = "401", description = "Unauthorized")
-    })
-    @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<String> isInDb() {
-        return ResponseEntity.ok(authService.connectBackend());
-    }
 }

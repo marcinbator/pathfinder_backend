@@ -1,7 +1,7 @@
-package pl.bator.pathfinder_service.entity.repository;
+package pl.bator.pathfinder_service.types.entity.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import pl.bator.pathfinder_service.entity.User;
+import pl.bator.pathfinder_service.types.entity.User;
 
 import java.util.Optional;
 

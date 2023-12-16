@@ -1,8 +1,11 @@
-package pl.bator.pathfinder_service.entity;
+package pl.bator.pathfinder_service.types.entity;
 
+import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.Data;
+import org.hibernate.annotations.Type;
+import pl.bator.pathfinder_service.types.Role;
 
 @Data
 @Entity
@@ -19,12 +22,13 @@ public class User {
     private String photo;
     @Enumerated(EnumType.STRING)
     private Role role;
-    @OneToOne
+    @Type(JsonType.class)
+    @Column(columnDefinition = "json")
     private Location primaryLocation;
     @Enumerated(EnumType.STRING)
     private AccountType accountType;
-}
 
-enum AccountType {
-    STUDENT, MANAGER, ADMIN
+    public enum AccountType {
+        STUDENT, MANAGER, ADMIN
+    }
 }

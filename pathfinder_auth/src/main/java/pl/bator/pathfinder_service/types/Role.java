@@ -1,4 +1,4 @@
-package pl.bator.pathfinder_service.entity;
+package pl.bator.pathfinder_service.types;
 
 public enum Role {
     ROLE_USER,

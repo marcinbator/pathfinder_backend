@@ -1,10 +1,12 @@
-package pl.bator.pathfinder_service.entity;
+package pl.bator.pathfinder_service.types;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.user.OAuth2User;
+import pl.bator.pathfinder_service.types.entity.Location;
+import pl.bator.pathfinder_service.types.entity.User;
 
 import java.util.Map;
 import java.util.Set;
@@ -19,7 +21,7 @@ public class UserPrincipal implements UserDetails, OAuth2User {
     private String email;
     private String photo;
     private Location primaryLocation;
-    private AccountType accountType;
+    private User.AccountType accountType;
     private final String password = null;
     private final boolean isActive = true;
     private final Set<SimpleGrantedAuthority> authorities;
