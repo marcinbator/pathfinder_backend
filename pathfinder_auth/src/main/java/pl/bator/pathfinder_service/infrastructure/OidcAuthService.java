@@ -3,6 +3,8 @@ package pl.bator.pathfinder_service.infrastructure;
 import io.vavr.control.Option;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
@@ -12,18 +14,21 @@ import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 import pl.bator.pathfinder_service.config.SecurityConfig;
-import pl.bator.pathfinder_service.entity.Role;
-import pl.bator.pathfinder_service.entity.User;
-import pl.bator.pathfinder_service.entity.UserPrincipal;
-import pl.bator.pathfinder_service.entity.repository.UserRepository;
+import pl.bator.pathfinder_service.types.Role;
+import pl.bator.pathfinder_service.types.UserPrincipal;
+import pl.bator.pathfinder_service.types.entity.User;
+import pl.bator.pathfinder_service.types.entity.repository.UserRepository;
+import pl.bator.pathfinder_service.util.JwtUtil;
 
 import java.util.Map;
+import java.util.Set;
 
 @Service
 @AllArgsConstructor
 public class OidcAuthService extends OidcUserService {
     private final UserRepository userRepository;
     private final SecurityConfig.SecurityProperties securityProperties;
+    private final JwtUtil jwtUtil;
 
     @Override
     public OidcUser loadUser(OidcUserRequest userRequest) throws OAuth2AuthenticationException {
@@ -48,6 +53,18 @@ public class OidcAuthService extends OidcUserService {
                     newUser.setRole(Role.ROLE_USER);
                     return newUser;
                 });
+    }
+
+    public String getToken() {
+        return Option.of(SecurityContextHolder.getContext().getAuthentication())
+                .map(Authentication::getPrincipal)
+                .filter(principal -> principal instanceof OidcUser)
+                .map(o -> (OidcUser) o)
+                .map(user -> jwtUtil.generateToken(new JwtUtil.Input(
+                        user.getEmail(),
+                        (Set<SimpleGrantedAuthority>) user.getAuthorities()
+                )))
+                .getOrNull();
     }
 
     public User getCurrentUser() {

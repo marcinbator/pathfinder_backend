@@ -18,8 +18,8 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import pl.bator.pathfinder_service.entity.Role;
 import pl.bator.pathfinder_service.infrastructure.OidcAuthService;
+import pl.bator.pathfinder_service.types.Role;
 
 import java.util.*;
 import java.util.stream.Collectors;
