@@ -1,0 +1,17 @@
+pathfinder-auth:
+  jwt:
+    expiration-mins: 60
+  security:
+    redirectUri: http://localhost:8081/api/docs.html
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/data
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            redirect-uri: http://localhost:8081/login/oauth2/code/google

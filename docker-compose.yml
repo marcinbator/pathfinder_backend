@@ -1,7 +1,17 @@
 version: '3.8'
 services:
+  pathfinder_auth:
+    container_name: pathfinder_auth
+    image: bator/pathfinder_auth
+    ports:
+      - "8081:8081"
+    depends_on:
+      - postgres
+    environment:
+      JWT-KEY: P8K53KMRFBWDRH3EBWYV3B9MQG6QU8V59PYRWGDG96MNDCYBQCJ5EEGXT5ZF76E6
+      GOOGLE-KEY: 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
   postgres:
-    image: postgres:14.1-alpine
+    image: postgres:15-alpine
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
